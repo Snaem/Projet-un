@@ -81,7 +81,24 @@ h2{
 }
 
 
+@media screen and (max-width: 961px) {
 
+    .container-card{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .img-history {
+        
+        align-items: center;
+
+        
+}
+
+
+}
 
 
 
