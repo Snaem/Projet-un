@@ -3,47 +3,77 @@
 
 html, body {
 	margin: 5px;
-	height: 100%;
+	min-height: 100%;
 }
 
 nav {
 	background-color: #7A454B;
-	height: 150px;
-	width: 100%;
 	border-radius: 10px;
-
+	display: flex;
+	height: 130px;
+	justify-content: center;
+	align-items: center;
+	transition: .6s;
 }
 
-div.navbar {
+div.burger {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+
+#burger .bar1,
+#burger .bar2,
+#burger .bar3 {width:32px; height:5px; background-color:#F1F1F1; margin:6px 0; transition:0.4s;}
+#burger:hover {opacity:.75; transition:.5s;}
+#burger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
+#burger.clicked .bar2 {opacity: 0;}
+#burger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);}
+
+div.burger:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.open-burger {
+    height: 250px;
+    transition: .2s;
+}
+
+/* Navigation bar logo's */ 
+
+div.logo {
 	display: flex;
-	height: 150px;
-	align-items: center;
+	flex-direction: row;
 }
 
 img.maison {
 	width: 120px;
 	height: 120px;
-	margin-right: 50px;
-	margin-left: 20px;
+	margin-left: 25px;
 }
 
 img.bordeaux{
+	margin-top: 10px;
 	height: 100px;
 	width: 100px;
+	margin-left: 25px;
 }
 
-ul.nav {
+/* List of differents possibilities for the website */
+
+ul.navigation {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 100%;
-	margin-left: 200px;
 	list-style-type: none;
+	padding-left: 300px;
 }
 
 li a {
-	margin-right: 50px;
-	font-size: 35px;
+	padding-right: 50px;
+	font-size: 32px;
 	font-family: 'Courgette', cursive;
 	color: #D0D3D4;
 	text-decoration: none;
@@ -55,35 +85,119 @@ li a:hover{
 	font-size: 40px;
 }
 
+/* Research functionnality */
+
 div.search {
 	display: flex;
 	justify-content: flex-end;
-	margin-left: 200px;
+	margin-right: 50px;
+	width: 100%;
 }
 
 div.search input{
 	padding-left: 10px;
 	border-width: 0;
 	border-color: #D0D3D4;
-	width: 300px;
+	max-width: 70%;
+	height: 50px;
 	font-size: 17px;
 	border-radius: 10px 0 0 10px;
 }
 div.loupe{
-	height: 50px;
-	width: 50px;
 	background-color: white;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	border-radius: 0 10px 10px 0;
 }
 
 div.loupe input{
+	margin-right: 10px;
 	height: 20px;
 	width: 20px;
-
 }
+
+/* Title of the website */ 
+
+div.titre {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 60px;
+	color: #FC4351
+}
+
+/* MEDIA QUERY FOR TABLET */
+
+@media (min-width: 961px) and (max-width: 1280px) {
+
+body {
+	background : lightgrey;
+}
+
+nav.navbar {
+	height: 120px;
+}
+
+/* Navigation bar logo's */ 
+
+img.maison {
+	width: 100px;
+	height: 100px;
+	padding-left: 40px;
+}
+
+img.bordeaux{
+	height: 80px;
+	width: 80px;
+}
+
+/* List of differents possibilities for the website */
+
+ul.navigation {
+	padding-left: 120px;
+}
+
+li a {
+	padding-right: 30px;
+	font-size: 23px;
+}
+
+li a:hover{
+	font-size: 23px;
+}
+
+/* Research functionnality */
+
+div.search input{
+	padding-left: 10px;
+	height: 40px;
+	width: 200px;
+	font-size: 14px;
+}
+div.loupe{
+	height: 42px;
+	width: 40px;
+}
+
+div.loupe input{
+	margin-right: 10px;
+	height: 15px;
+	width: 15px;
+}
+
+h1 {
+	font-size: 45px;
+}
+}
+
+/*MEDIA QUERY FOR SMARTPHONES */
+
+@media (max-width: 961px) {
+
 /* CARROUSEL */
 
 
