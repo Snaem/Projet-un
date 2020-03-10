@@ -8,7 +8,7 @@ html, body {
 
 nav {
 	background-color: #7A454B;
-	height: 150px;
+	height: 130px;
 	width: 100%;
 	border-radius: 10px;
 
@@ -16,7 +16,7 @@ nav {
 
 div.navbar {
 	display: flex;
-	height: 150px;
+	height: 130px;
 	align-items: center;
 }
 
@@ -83,6 +83,16 @@ div.loupe input{
 	height: 20px;
 	width: 20px;
 
+}
+
+div.titre {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 50px;
 }
 /* CARROUSEL */
 
