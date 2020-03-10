@@ -1,6 +1,9 @@
-let burger = document.getElementById('burger')
-let navbar = document.getElementById('navbar')
-
-burger.addEventListener('click', (event) => {
-    navbar.classList.toggle('open-burger');
-})
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myNavigation");
+  if (x.className === "navigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "navigation";
+  }
+}

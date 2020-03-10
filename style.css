@@ -2,77 +2,71 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans)
 
 html, body {
-	margin: 5px;
 	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	text-align: center;
+}
+
+/* Header with logos */ 
+
+img.maison {
+	width: 180px;
+	height: 180px;
+	margin-left: 50px;
+}
+
+img.bordeaux{
+	height: 140px;
+	width: 140px;
+	margin-right: 50px;
+}
+
+/* Title of the website */ 
+
+div.titre {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-family: 'Viaoda Libre', cursive;
+	font-size: 60px;
+	color: #FC4351;
+	margin-right: 40px;
 }
 
 nav {
 	background-color: #7A454B;
 	border-radius: 10px;
 	display: flex;
-	height: 130px;
-	justify-content: center;
-	align-items: center;
-	transition: .6s;
-}
-
-div.burger {
-	display: none;
-	position: absolute;
-	top: 30px;
-	left: 40px;
-}
-
-#burger .bar1,
-#burger .bar2,
-#burger .bar3 {width:32px; height:5px; background-color:#F1F1F1; margin:6px 0; transition:0.4s;}
-#burger:hover {opacity:.75; transition:.5s;}
-#burger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
-#burger.clicked .bar2 {opacity: 0;}
-#burger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);}
-
-div.burger:hover {
-    color: white;
-    cursor: pointer;
-}
-
-.open-burger {
-    height: 250px;
-    transition: .2s;
-}
-
-/* Navigation bar logo's */ 
-
-div.logo {
-	display: flex;
-	flex-direction: row;
-}
-
-img.maison {
-	width: 120px;
 	height: 120px;
-	margin-left: 25px;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-img.bordeaux{
-	margin-top: 10px;
-	height: 100px;
-	width: 100px;
-	margin-left: 25px;
-}
+/* Burger menu for mobile devices */
 
-/* List of differents possibilities for the website */
+
+/* List of differents possibilities for the website and navigation */
 
 ul.navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	list-style-type: none;
-	padding-left: 300px;
 }
 
 li a {
 	padding-right: 50px;
+	padding-left: 50px;
 	font-size: 32px;
 	font-family: 'Courgette', cursive;
 	color: #D0D3D4;
@@ -98,7 +92,7 @@ div.search input{
 	padding-left: 10px;
 	border-width: 0;
 	border-color: #D0D3D4;
-	max-width: 70%;
+	width: 80%;
 	height: 50px;
 	font-size: 17px;
 	border-radius: 10px 0 0 10px;
@@ -117,19 +111,6 @@ div.loupe input{
 	width: 20px;
 }
 
-/* Title of the website */ 
-
-div.titre {
-	display: flex;
-	justify-content: center;
-}
-
-h1 {
-	font-family: 'Viaoda Libre', cursive;
-	font-size: 60px;
-	color: #FC4351
-}
-
 /* MEDIA QUERY FOR TABLET */
 
 @media (min-width: 961px) and (max-width: 1280px) {
@@ -138,21 +119,21 @@ body {
 	background : lightgrey;
 }
 
-nav.navbar {
-	height: 120px;
-}
-
 /* Navigation bar logo's */ 
 
+nav {
+	height: 80px;
+}
+
 img.maison {
-	width: 100px;
-	height: 100px;
-	padding-left: 40px;
+	width: 120px;
+	height: 120px;
+	padding-left: 0px;
 }
 
 img.bordeaux{
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 }
 
 /* List of differents possibilities for the website */
@@ -162,12 +143,13 @@ ul.navigation {
 }
 
 li a {
-	padding-right: 30px;
-	font-size: 23px;
+	padding-right: 40px;
+	font-size: 28px;
+	padding-left: 0px;
 }
 
 li a:hover{
-	font-size: 23px;
+	font-size: 28px;
 }
 
 /* Research functionnality */
@@ -175,7 +157,7 @@ li a:hover{
 div.search input{
 	padding-left: 10px;
 	height: 40px;
-	width: 200px;
+	width: 60%;
 	font-size: 14px;
 }
 div.loupe{
@@ -197,6 +179,35 @@ h1 {
 /*MEDIA QUERY FOR SMARTPHONES */
 
 @media (max-width: 961px) {
+
+header{
+	background-color: #7A454B;
+	border-radius: 10px;
+	display: flex;
+	height: 100px;
+	align-items: center;
+	transition: .6s;
+}
+
+
+h1 {
+	position: absolute;
+	top: 5px;
+	left: 200px;
+	font-size: 35px;
+	margin-right: 60px;
+	color: white;
+}
+
+nav {
+	display:none;
+}
+
+img {
+	display: none;
+}
+
+}
 
 /* CARROUSEL */
 
