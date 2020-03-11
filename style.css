@@ -78,7 +78,9 @@
 {
   margin:0
 }
-@media (max-width:991px)
+
+
+@media (max-width:961px)
 {
    .title_contact{
 
@@ -86,10 +88,6 @@
     font-size: 25px;
     margin: 0;
   }
-
-}
-@media (max-width:767px)
-{
   .site-footer
   {
     padding-bottom:0
