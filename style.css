@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 2000px;
     overflow: hidden;
-    height: 40vw;
+    height: 30vw;
 }
 
 #carousel figure{
@@ -28,7 +28,7 @@
 
 #carousel figure img{
     width: 20%;
-    height: auto;
+    height: 30vw;
     float: left;
 }
 
@@ -86,7 +86,8 @@
 
 h2{
     text-align: center;
-    color: #CF1717;
+    color: #FC4351;
+    
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
