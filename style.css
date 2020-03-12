@@ -529,15 +529,15 @@ h2 {
   margin-bottom:4px
 }
 
-.social-icons a {
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
+div.social-icons a {
+ font-size: 26px;
+ display: inline-block;
+ line-height: 44px;
+ width: 44px;
+ height: 44px;
+ text-align: center;
+ margin-right: 4px;
+ border-width:40%;
 
 }
 
@@ -548,11 +548,4 @@ h2 {
   font-size:14px
 }
 
-.social-icons a.facebook {
-  background-color:#3b5998
-}
 
-.social-icons a.twitter {
-  background-color:#00aced
-}
-}
