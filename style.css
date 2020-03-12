@@ -371,7 +371,9 @@ div.loupe input {
 
 h2 {
     text-align: center;
-    color: #FC4351;
+	color: #FC4351;
+	font-size: 45px;
+	font-family: 'Viaoda Libre', cursive;
     
 }
 .card {
@@ -379,7 +381,8 @@ h2 {
     transition: 0.3s;
     width: 25%;
     margin-top: 10px;
-    margin-bottom: 50px;
+	margin-bottom: 50px;
+	border-radius: 10px;
     
 }
 .container {
@@ -402,7 +405,8 @@ h2 {
 }
 .img-history img {
     align-items: center;
-    margin-top: 80px;     
+	margin-top: 80px;  
+	border-radius: 10px;   
 }
 }
 
@@ -413,18 +417,21 @@ h2 {
     align-items: flex-end;
 }
 
-
 .img-history img {
     width: 30vw;
     margin-right: 100px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
 }
+
+
 
 .paragraph-history {
 	margin-top: 100px;
     margin-right: 100px;
     margin-left: 100px;
-    text-align: justify;
+	text-align: justify;
+	font-size: 25px;
     
 }
 
@@ -437,9 +444,15 @@ h2 {
         
 }
 
+.card{ 
+	width: 50%;
+}
 .img-history img {
     align-items: center;
     margin-top: 80px;     
+}
+.paragraph-history{
+	font-size: 15px;
 }
 }
 
