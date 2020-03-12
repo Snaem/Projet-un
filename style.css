@@ -275,12 +275,18 @@ a.marge {
 .nav {
 	margin-left: -1400px;
 	transition-duration: 0.6s;
+	z-index: 1;
 }
 
 .nav_open {
 	margin-left: -850px;
 	transition-duration: 0.6s;
 	z-index: 1;
+}
+
+.nav_close {
+	margin-left: -1400px;
+	transition-duration: 0.6s;
 }
 
 
