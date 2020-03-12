@@ -11,6 +11,7 @@ nav {
 	height: 130px;
 	width: 100%;
 	border-radius: 10px;
+	margin-bottom: 10px;
 }
 .menu {
 	display: none;
@@ -28,8 +29,8 @@ header{
 /* Header with logos */ 
 
 img.maison {
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	margin-left: 50px;
 }
 
@@ -38,8 +39,8 @@ img.maison {
 }
 
 img.bordeaux{
-	height: 140px;
-	width: 140px;
+	height: 120px;
+	width: 120px;
 	margin-right: 50px;
 }
 
@@ -49,11 +50,12 @@ img.bordeaux{
 div.titre {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 h1 {
 	font-family: 'Viaoda Libre', cursive;
-	font-size: 60px;
+	font-size: 55px;
 	color: #FC4351;
 	margin-right: 40px;
 }
@@ -203,7 +205,7 @@ header{
 	display: flex;
 	height: 120px;
 	align-items: center;
-	transition: .6s;
+	margin-bottom: 10px;
 }
 
 .toggle_btn {
@@ -214,6 +216,7 @@ header{
 	margin-left: 100px;
 	margin-top: 5px;
 	cursor: pointer;
+	z-index: 2;
 }
 
 .toggle_btn span {
@@ -272,10 +275,17 @@ a.marge {
 .nav {
 	margin-left: -1400px;
 	transition-duration: 0.6s;
+	z-index: 1;
 }
 
 .nav_open {
 	margin-left: -850px;
+	transition-duration: 0.6s;
+	z-index: 1;
+}
+
+.nav_close {
+	margin-left: -1400px;
 	transition-duration: 0.6s;
 }
 
@@ -299,7 +309,7 @@ nav {
 	display:none;
 }
 
-img.maison img.bordeaux {
+img.maison, img.bordeaux {
 	display: none;
 }
 
@@ -334,6 +344,7 @@ div.loupe input {
     max-width: 2000px;
     overflow: hidden;
     height: 30vw;
+    border-radius: 10px;
 }
 
 #carousel figure {
@@ -371,9 +382,14 @@ div.loupe input {
 
 h2 {
     text-align: center;
+<<<<<<< HEAD
 	color: #FC4351;
 	font-size: 45px;
 	font-family: 'Viaoda Libre', cursive;
+=======
+    color: #FC4351;
+    font-size: 45px;
+>>>>>>> 32fc1418294366441bef909c0785b270c11f17a9
     
 }
 .card {
@@ -381,8 +397,13 @@ h2 {
     transition: 0.3s;
     width: 25%;
     margin-top: 10px;
+<<<<<<< HEAD
 	margin-bottom: 50px;
 	border-radius: 10px;
+=======
+    margin-bottom: 50px;
+    border-radius: 10px;
+>>>>>>> 32fc1418294366441bef909c0785b270c11f17a9
     
 }
 .container {
@@ -542,15 +563,15 @@ h2 {
   margin-bottom:4px
 }
 
-.social-icons a {
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
+div.social-icons a {
+ font-size: 26px;
+ display: inline-block;
+ line-height: 44px;
+ width: 44px;
+ height: 44px;
+ text-align: center;
+ margin-right: 4px;
+ border-width:40%;
 
 }
 
@@ -561,11 +582,4 @@ h2 {
   font-size:14px
 }
 
-.social-icons a.facebook {
-  background-color:#3b5998
-}
 
-.social-icons a.twitter {
-  background-color:#00aced
-}
-}
