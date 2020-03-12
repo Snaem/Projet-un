@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<html>
-<head>
+<head>  
  	<meta charset="utf-8">
  	<meta name="author" content="Caroline FOURCADE, Laetitia GONCALVES, Clement CHERADAME">
  	<meta name="description" content="Presentation of the Maison cantonale de Bastide, showing events and show performed here">
  	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
  	<link href="style.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap" rel="stylesheet">
  	<title>La maison cantonale de Bastide</title>
@@ -23,17 +14,17 @@
 <body>
 
 <!-- ######################### NAVBAR ######################### -->
-	<header id="navbar">
+	<header id="navbar"> <!-- Header and Navigation bar -->
 		<img class="maison" src="logo/logo.png">
-		<div class="toggle_btn">
+		<div class="toggle_btn"> <!-- Burger menu for mobile version -->
 			<span></span>
 		</div>
 		<div class="menu nav">
 			<a class="marge" href="">Acceuil</a>
-			<a href="#evenements">Evènements</a>
-			<a href="#histoire">Histoire</a>
-			<a href="#contact">Contact</a>	
-			<div class ="search">
+			<a class="btn" href="#Evenements">Evènements</a>
+			<a class="btn2" href="#Histoire">Histoire</a>
+			<a class="btn3" href="#contact">Contact</a>	
+			<div class ="search"> <!-- Research function -->
 			<input type="text" name="search" placeholder="Que cherchez-vous ?">
 			<div class="loupe">
 				<input type="image" src="logo/loupe.png" alt="Submit">
@@ -41,19 +32,17 @@
 		</div>
 		</div>
 		<div class ="titre">
-			<h1> Bienvenue à la maison cantonale de Bastide</h1>
+			<h1> Bienvenue à la maison cantonale de La Bastide</h1>
 		</div>
 		<img class="maison-mobile" src="logo/logo-ok.png">
 		<img class="bordeaux" src="logo/logo_bordeaux.png">
 	</header>
-	<nav id="navbar">
+	<nav id="navbar"> <!-- Navigation bar for desktop et tablet version -->
 		<ul class="navigation">
 			<li><a href="">Acceuil</a></li>
-			<li><a href="#evenements">Evènements</a></li>
-			<li><a href="#histoire">Histoire</a></li>
+			<li><a href="#Evenements">Evènements</a></li>
+			<li><a href="#Histoire">Histoire</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
 			</a>
 		</ul>
 		<div class ="search">
@@ -63,66 +52,65 @@
 			</div>
 		</div>
 	</nav>
-	<div class="titre"><h1> La maison cantonale de la Bastide </h1></div>
 
 <!-- ######################### CARROUSEL ######################### -->
-
-<div id="carousel">
-	    <figure>
-	        <img src="logo/maison-cantonale-de-nuit.jpg" alt="maison cantonale de nuit">
-	        <img src="logo/guitare.jpg" alt="guitare">
-	        <img src="logo/note-musique.jpg" alt="tag mural">
-	        <img src="logo/tag-murale-2.jpg" alt="tag mural">
-	        <img src="logo/ballet-2.webp" alt="ballet de danse">       
-	    </figure>
-	</div>
-
-<!-- ######################### CARTES ######################### -->
-
-	<h2 id="Evenements">Evènements à venir!!!</h2>
-
-	<div class="container-card">
-		<div class="card">
-				<img src="logo/salle-de-reunion.jpg" alt="salle de réunion" style="width:100%"> 
-			<div class="container">
-	  			<h4><b>Réunion de la Wild Code School</b></h4>
-	  			<p>Lundi 16 mars 2020 à 14h00</p>
-	  			<p>Mise en place du Projet 2</p>
+	<div class="container">
+		<div id="carousel">
+			    <figure>
+			        <img src="logo/maison-cantonale-de-nuit.jpg" alt="maison cantonale de nuit">
+			        <img src="logo/guitare.jpg" alt="guitare">
+			        <img src="logo/note-musique.jpg" alt="tag mural">
+			        <img src="logo/tag-murale-2.jpg" alt="tag mural">
+			        <img src="logo/ballet-2.webp" alt="ballet de danse">       
+			    </figure>
 			</div>
-		</div>
 
-	<div class="card">
-	  <img src="logo/salle-de-conferences-ok.jpg" alt="salle de conférence" style=width:100%> 
-	<div class="container">
-	  <h4><b>Conférence sur le Numérique</b></h4>
-	  <p>Mardi 17 mars 2020 de 9h00 à 11h00</p>
-	  <p>Organisé par pôle emploi en association avec la Wild Code School</p>
-	</div>
-	</div>
+		<!-- ######################### CARTES ######################### -->
 
-	<div class="card">
-	  <img src="logo/salle-de-spectacle.jpg" alt="salle de spectacle" style=width:100%> 
-	<div class="container">
-	  <h4><b>Bizutage des nouveaux Wilders</b></h4>
-	  <p>Vendredi 20 mars 2020 à 20h00</p>
-	  <p>Vidéoprojection:
-	     Rétrospective sur les différents bizutages des Wilders de l'Europe</p>
-	</div>
-	</div>
-	</div>
+			<h2 id="Evenements">Evènements à venir !!!</h2>
 
-<!-- ######################### HISTOIRE #########################-->
-	<h2 id="Histoire">Un peu d'histoire</h2>
-	<div class="history-section">
-	   <p class="paragraph-history"> A l'angle de la rue de Nuits et de la rue de Chateauneuf, la Maison cantonale est un lieu à vocation polyvalente. Entièrement rénovée entre 2001 et 2006, cet édifice de style Art Nouveau a été distingué par un Ruban du patrimoine. Elle a accueilli un prétoire, une bibliothèque, un commissariat et la mairie de quartier.
-	  Aujourd'hui elle accueille des manifestations : des spectacles, des conférence, des réunions de quartiers et des activités associatives (la mairie de quartier est maintenant située 38 rue de Nuits).</p>
-	<div class="img-history">
-	   	<img src="logo/maison-cantonale.jpg" alt="Maison Cantonale de Bordeaux-Bastide">
-	</div>
-	</div>
+			<div class="container-card">
+				<div class="card">
+						<img src="logo/salle-de-reunion.jpg" alt="salle de réunion" style="width:100%"> 
+					<div class="container">
+			  			<h4><b>Réunion de la Wild Code School</b></h4>
+			  			<p>Lundi 16 mars 2020 à 14h00</p>
+			  			<p>Mise en place du Projet 2</p>
+					</div>
+				</div>
+
+			<div class="card">
+			  <img src="logo/salle-de-conferences-ok.jpg" alt="salle de conférence" style=width:100%> 
+			<div class="container">
+			  <h4><b>Conférence sur le Numérique</b></h4>
+			  <p>Mardi 17 mars 2020 de 9h00 à 11h00</p>
+			  <p>Organisé par pôle emploi en association avec la Wild Code School</p>
+			</div>
+			</div>
+
+			<div class="card">
+			  <img src="logo/salle-de-spectacle.jpg" alt="salle de spectacle" style=width:100%> 
+			<div class="container">
+			  <h4><b>Bizutage des nouveaux Wilders</b></h4>
+			  <p>Vendredi 20 mars 2020 à 20h00</p>
+			  <p>Vidéoprojection:
+			     Rétrospective sur les différents bizutages des Wilders de l'Europe</p>
+			</div>
+			</div>
+			</div>
+
+		<!-- ######################### HISTOIRE #########################-->
+			<h2 id="Histoire">Un peu d'histoire</h2>
+			<div class="history-section">
+			   <p class="paragraph-history"> A l'angle de la rue de Nuits et de la rue de Chateauneuf, la Maison cantonale est un lieu à vocation polyvalente. Entièrement rénovée entre 2001 et 2006, cet édifice de style Art Nouveau a été distingué par un Ruban du patrimoine. Elle a accueilli un prétoire, une bibliothèque, un commissariat et la mairie de quartier.
+			  Aujourd'hui elle accueille des manifestations : des spectacles, des conférence, des réunions de quartiers et des activités associatives (la mairie de quartier est maintenant située 38 rue de Nuits).</p>
+			<div class="img-history">
+			   	<img src="logo/maison-cantonale.jpg" alt="Maison Cantonale de Bordeaux-Bastide">
+			</div>
+			</div>
 
 
-
+<<<<<<< HEAD
 	<!-- ######################### FORMULAIRE ######################### -->
 
 	<hr>
@@ -166,7 +154,51 @@
         </div>
       </div>
 </footer>
+=======
+>>>>>>> f59686bc70e069e87c8b823dfa8be469e24d6fe8
 
+			<!-- ######################### FORMULAIRE ######################### -->
+
+			<hr>
+			<form id = "contact">
+		    <h2 class="title_contact">Contact us</h2>
+		    <div class="form_display">
+		      <input class="style_form" type="email" placeholder="@">
+		      <input class="style_form" type="text" placeholder="&#8962;">
+		      <textarea class="style_form" placeholder="Your message" rows="8"></textarea>
+		      <input class="submit" type="submit" value="Send">
+		    </div>
+		  	</form>  
+
+		  <!-- ######################### Site footer ######################### -->
+		    <footer class="site-footer">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-sm-12 col-md-6">
+		            <h6>Quand venir</h6>
+		            <p class="text-justify"><i>Horaire d'ouvertures : mardi, jeudi: 14h-22h ; le mercredi: 9h-12h et 14h-22h ; le vendredi: 9h-12h et 14h-23h;le samedi: 14h-23h</p>
+		          </div>
+
+		        <!--copyright-->
+		        <hr>
+		      	</div>
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-8 col-sm-6 col-xs-12">
+		            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+		         <a href="#">Wild Code School</a>.
+		            </p>
+		          </div>
+
+		            <ul class="social-icons">
+		              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+		              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		</footer>
+	</div>
 <script src="script.js"></script>
 </body>
 
