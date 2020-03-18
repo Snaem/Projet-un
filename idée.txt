@@ -1,0 +1,14 @@
+Barre de navigation : 
+    - Ajouter un dégradé de couleur
+    - Rendre la barre de recherche fonctionnelle 
+    - Ajouter un onglet réservation avec un formulaire 
+
+Carousel : 
+    - Passage du carousel en JS
+    - Rendre le carousel cliquable et swipable 
+
+Evènements : 
+    -Re-stylisé les cartes, peut-être aller chercher des idées sur internet 
+
+Footer : 
+    -Rajouter la carte google map et re-stylisé la barre 
